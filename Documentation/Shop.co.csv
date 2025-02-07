@@ -1,0 +1,24 @@
+Test Case ID,Test Case Title,Description,Preconditions,Test Steps,Expected Result,Actual Result,Status,Security Level,Remarks
+TC-001,Search Bar Functionality,Validate that the search bar filters products based on user input.,"Application is running, user logged in","1. Open the LuxeWalk homepage.
+2. Enter a valid product name in the search bar.
+3. Press ""Search.""","Products matching the search query are displayed.
+User-friendly message appears if no matches are found.",Pass,Resolved,Medium,-
+TC-002,Filter Component,"Ensure filters apply correctly based on user-selected criteria (e.g., price, category).",Application is running,"1. Go to the categeory page.
+2. Select a category and price range.
+3. Observe the filtered product list.",Products are filtered correctly based on the selected criteria.,Fail,Pending,Medium,some filters are workig fine but color and size filter can be improve
+TC-003,Checkout Validation,Verify the checkout process prompts the user to fill in required information before placing an order.,Cart contains items,"1. Add products to the cart.
+2. Navigate to the checkout page.
+3. Attempt checkout without entering personal information.
+4. Enter info and retry.","User is prompted to fill out the required form if details are incomplete.
+Order is placed upon valid input.",Pass,Resolved,High,-
+TC-004,Dynamic Routing,Test that clicking on a product redirects to its dynamic product detail page with correct data.,Product listing page is accessible,"1. Open the product listing page.
+2. Click on any product.
+3. Verify that the product detail page loads with accurate information.",Dynamic product page loads correctly with product-specific data.,Pass,Resolved,High,-
+TC-005,Authentication Dashboard,Verify user dashboard shows order status when logged in.,User is logged in and has orders,"1. Log in with a valid user account.
+2. Navigate to the dashboard.
+3. Check order status information.","Dashboard displays the order details (e.g., active, pending, completed orders).",Pass,Resolved,High,-
+TC-006,write review,verify that if user write review about any product then it show to the UI,Write review is working correctly,"1. Go to the product detail page.    
+2.Write review and submit 
+3.then validate it show in the UI correctly",It will get user input and show in UI after submition,Fail,Pending,Medium,it accepts input correctly and show it in UI but not correctly 
+TC-007,Api test,Test Api error handling and request sanitizing,It should show fallback error message ,1. disconnect api and request,It will show fallback error message,Pass,Resolved,High,-
+TC-008,Enshure responsiveness,test app on diffrent size screen for responsiveness,It should be responsive on all screens,1. open inspect and change screen size from browser dev tool,It should be responsive on all screens,Pass,Resolved,High,-
